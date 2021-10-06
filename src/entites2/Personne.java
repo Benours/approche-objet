@@ -1,4 +1,6 @@
-package entites;
+package entites2;
+
+import entites.AdressePostale;
 
 public class Personne {
 	private String nom;
