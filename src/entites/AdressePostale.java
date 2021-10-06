@@ -17,8 +17,8 @@ public class AdressePostale {
 
 	@Override
 	public String toString() {
-		return "AdressePostale [numeroRue=" + numeroRue + ", libelleRue=" + libelleRue + ", codePostal=" + codePostal
-				+ ", ville=" + ville + "]";
+		return numeroRue + " " + libelleRue + " " + codePostal
+				+ " " + ville;
 	};
 	
 	
