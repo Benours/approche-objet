@@ -11,6 +11,11 @@ public class Personne {
 		this.nom = nom;
 		this.prenom = prenom;
 		this.adresse = adresse;
+	}	
+	
+	public Personne(String nom, String prenom) {
+		this.nom = nom;
+		this.prenom = prenom;
 	}
 
 	@Override
