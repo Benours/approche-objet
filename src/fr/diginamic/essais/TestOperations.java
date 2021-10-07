@@ -17,6 +17,8 @@ public class TestOperations {
 		System.out.println("Multiplication : " + resultat);
 		resultat = Operations.calcul(nb1, nb2, '/');
 		System.out.println("Division : " + resultat);
+		resultat = Operations.calcul(nb1, nb2, 'd');
+		System.err.println("Erreur : " + resultat);
 	}
 
 }
