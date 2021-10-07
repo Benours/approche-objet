@@ -13,6 +13,10 @@ public abstract class Creature {
 		this.score = score;
 	}
 	
+	public int getPointVieMax() {
+		return pointVieMax;
+	}
+
 	public int getForce() {
 		return force;
 	}

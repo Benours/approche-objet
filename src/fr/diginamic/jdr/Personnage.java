@@ -39,8 +39,18 @@ public class Personnage {
 		}
 	}
 
+	public int getPointVieMax() {
+		return pointVieMax;
+	}
+
 	public int getScore() {
 		return score;
 	}
+
+	public void setScore(int score) {
+		this.score += score;
+	}
+	
+	
 	
 }
