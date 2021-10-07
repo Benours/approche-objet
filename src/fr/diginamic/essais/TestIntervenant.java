@@ -11,6 +11,8 @@ public class TestIntervenant {
 
 		System.out.println("Salaire du salarié " + salarie.getNom() + " : " + salarie.getSalaire());
 		System.out.println("Salaire du pigiste " + pigiste.getNom() + " : " + pigiste.getSalaire());
+		System.out.println(salarie.afficherDonnees());
+		System.out.println(pigiste.afficherDonnees());
 	}
 
 }

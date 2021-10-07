@@ -10,6 +10,12 @@ public class Salarie extends Intervenant {
 		this.salaire = salaire;
 	}
 
+	@Override
+	public String afficherDonnees() {
+		// TODO Auto-generated method stub
+		return super.afficherDonnees() + "Type de contrat : " + contrat + "\nSalaire : " + salaire;
+	}
+
 	public String getContrat() {
 		return contrat;
 	}

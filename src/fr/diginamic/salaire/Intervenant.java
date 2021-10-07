@@ -8,6 +8,10 @@ public abstract class Intervenant {
 		this.nom = nom;
 		this.prenom = prenom;
 	}
+	
+	public String afficherDonnees() {
+		return "Nom : " + nom + "\nPrenom : " + prenom + "\n";
+	}
 
 	public String getNom() {
 		return nom;

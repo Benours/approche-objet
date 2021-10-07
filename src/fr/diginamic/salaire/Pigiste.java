@@ -11,6 +11,13 @@ public class Pigiste extends Intervenant {
 	}
 
 	@Override
+	public String afficherDonnees() {
+		// TODO Auto-generated method stub
+		return super.afficherDonnees() + "Nombre de jour de travail : " + jourTravail + "\n"
+				+ "Salaire journalier : " + salaireJournalier;
+	}
+
+	@Override
 	public double getSalaire() {
 		// TODO Auto-generated method stub
 		return jourTravail * salaireJournalier;
