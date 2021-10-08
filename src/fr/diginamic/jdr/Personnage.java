@@ -12,6 +12,14 @@ public class Personnage {
 		this.pointVie = this.pointVieMax;
 		this.score = 0;
 	}
+	
+	public void afficher() {
+		System.out.println("Tu as " + this.getForce() + " de Force et " + this.getPointVie() + " PV sur " + this.getPointVieMax() + " PV");
+	}
+	
+	public int attaque() {
+		return this.getForce() + (int) (Math.random() * 10);
+	}
 
 	public int getForce() {
 		return force;
