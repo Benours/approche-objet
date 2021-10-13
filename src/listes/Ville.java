@@ -1,6 +1,6 @@
 package listes;
 
-public class Ville {
+public class Ville implements Comparable<Ville>{
 	private String nom;
 	private int nombreHabitant;
 	
@@ -30,6 +30,16 @@ public class Ville {
 	@Override
 	public String toString() {
 		return "Ville [nom=" + nom + ", nombreHabitant=" + nombreHabitant + "]";
+	}
+
+	@Override
+	public int compareTo(Ville o) {
+		// TODO Auto-generated method stub
+		if (this.nombreHabitant > o.getNombreHabitant())
+			return 1;
+		if (this.nombreHabitant < o.getNombreHabitant())
+			return -1;
+		return 0;
 	}
 	
 	
