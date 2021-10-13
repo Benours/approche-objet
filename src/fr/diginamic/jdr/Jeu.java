@@ -54,7 +54,7 @@ public class Jeu {
 						System.out.println("\n\n\n");
 						System.out.println(creature.getType() + " : ");
 						creature.afficher();
-						Thread.sleep(1000);
+						Thread.sleep(2000);
 						System.out.println("\n\n\n");
 						System.out.println("Le monstre attaque : " + attaqueMonstre + " DGT!");
 						System.out.println("Votre attaque : " + attaqueJoueur + " DGT!");
