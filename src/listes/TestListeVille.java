@@ -46,6 +46,12 @@ public class TestListeVille {
 		System.out.println("Max : " + indexMax);
 		System.out.println("Min : " + indexMin.getNom());
 		tableauVille.remove(indexMin);
+		
+		for (int i = 0; i < tableauVille.size(); i++) {
+			if (tableauVille.get(i).getNombreHabitant() > 100000) {
+				tableauVille.get(i).setNom(tableauVille.get(i).getNom().toUpperCase());
+			}
+		}
 
 		for (int i = 0; i < tableauVille.size(); i++) 
 			System.out.print(tableauVille.get(i) + " ");
