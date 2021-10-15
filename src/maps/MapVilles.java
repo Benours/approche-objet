@@ -3,6 +3,7 @@ package maps;
 import java.util.HashMap;
 import java.util.Set;
 
+import fr.diginamic.testenumeration.Continent;
 import listes.Ville;
 
 public class MapVilles {
@@ -10,14 +11,14 @@ public class MapVilles {
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
 
-		Ville nice = new Ville("Nice", 343000);
-		Ville carcassonne = new Ville("Carcassonne", 47800);
-		Ville narbonne = new Ville("Narbonne", 53000);
-		Ville lyon = new Ville("Lyon", 484000);
-		Ville foix = new Ville("Foix", 9700);
-		Ville pau = new Ville("Pau", 77200);
-		Ville marseille = new Ville("Marseille", 850700);
-		Ville tarbes = new Ville("Tarbes", 40600);
+		Ville nice = new Ville("Nice", 343000, Continent.EUROPE);
+		Ville carcassonne = new Ville("Carcassonne", 47800, Continent.EUROPE);
+		Ville narbonne = new Ville("Narbonne", 53000, Continent.EUROPE);
+		Ville lyon = new Ville("Lyon", 484000, Continent.EUROPE);
+		Ville foix = new Ville("Foix", 9700, Continent.EUROPE);
+		Ville pau = new Ville("Pau", 77200, Continent.EUROPE);
+		Ville marseille = new Ville("Marseille", 850700, Continent.EUROPE);
+		Ville tarbes = new Ville("Tarbes", 40600, Continent.EUROPE);
 		
 		HashMap<String, Ville> map = new HashMap<String, Ville>();
 		map.put(nice.getNom(), nice);
