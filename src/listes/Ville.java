@@ -33,6 +33,15 @@ public class Ville implements Comparable<Ville>{
 	}
 
 	@Override
+	public boolean equals(Object obj) {
+		// TODO Auto-generated method stub
+		if (!(obj instanceof Ville))
+			return false;
+		Ville other = (Ville) obj;
+		return nom.equals(other.getNom()) && nombreHabitant == other.getNombreHabitant();
+	}
+
+	@Override
 	public int compareTo(Ville o) {
 		// TODO Auto-generated method stub
 		if (this.nombreHabitant > o.getNombreHabitant())
