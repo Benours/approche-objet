@@ -1,13 +1,29 @@
 package sets;
 
+import java.lang.reflect.Field;
+
+import annotations.Rule;
+import annotations.ToString;
+import fr.diginamic.testexceptions.ReflectionException;
+import fr.diginamic.testexceptions.RuleException;
+
 public class Pays {
+	@ToString(separateur = "->", upperCase=true)
 	private String nom;
-	private int nombreHabitant;
+	
+	@ToString(separateur = "$/habs")	
 	private int pib;
-	public Pays(String nom, int nombreHabitant, int pIB) {
+
+	@ToString(separateur = "habs")
+	@Rule(min=0)
+	private int nombreHabitant;	
+	
+	public Pays(String nom, int nombreHabitant, int pIB) throws RuleException, IllegalArgumentException, IllegalAccessException, ReflectionException {
+		
 		this.nom = nom;
-		this.nombreHabitant = nombreHabitant;
 		this.pib = pIB;
+		this.nombreHabitant = nombreHabitant;
+		Validator.validate(this);
 	}
 	
 	public Pays() {}
@@ -34,13 +50,6 @@ public class Pays {
 
 	public void setPib(int pib) {
 		this.pib = pib;
-	}
-
-	@Override
-	public String toString() {
-		return "Pays [nom=" + nom + ", nombreHabitant=" + nombreHabitant + ", pib=" + pib + "]";
-	}
-	
-	
+	}	
 	
 }

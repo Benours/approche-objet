@@ -8,11 +8,11 @@ public class TestContinentAvecEnum {
 
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
-		Ville paris = new Ville("Paris", 343000, Continent.EUROPE);
-		Ville newyork = new Ville("New York", 47800, Continent.AMERIQUE);
-		Ville sydney = new Ville("Sydney", 53000, Continent.OCEANIE);
-		Ville tokyo = new Ville("Tokyo", 484000, Continent.ASIE);
-		Ville pretoria = new Ville("Pretoria", 9700, Continent.AFRIQUE);
+		Ville paris = new Ville("Paris", 2161000, Continent.EUROPE);
+		Ville newyork = new Ville("New York", 8419000, Continent.AMERIQUE);
+		Ville sydney = new Ville("Sydney", 5312000, Continent.OCEANIE);
+		Ville tokyo = new Ville("Tokyo", 13960000, Continent.ASIE);
+		Ville pretoria = new Ville("Pretoria", 741000, Continent.AFRIQUE);
 		
 		ArrayList<Ville> tableauVille = new ArrayList<Ville>();
 		tableauVille.add(paris);
